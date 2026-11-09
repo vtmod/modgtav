@@ -1,0 +1,1781 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>VT MODGTAV - Mod Ô Tô, Xe Máy, Nhân Vật VIP</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- =========================================================================
+         🛠️ BẢNG CÀI ĐẶT NHANH (NẰM NGAY ĐẦU FILE - THAY LINK & TÊN LÀ ĂN 100%)
+         Bạn có thể sửa trực tiếp ở dưới đây HOẶC bấm nút "✏️ Sửa Web" ngay trên
+         giao diện web để thêm ảnh banner, đổi tên banner và xem trước trực tiếp!
+         ========================================================================= -->
+    <script>
+        // Logo GTA V (iOS & Android) chuẩn theo mẫu ảnh của bạn
+        window.LOGO_GTA5_MAC_DINH = "data:image/svg+xml;utf8," + encodeURIComponent(`
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+            <defs>
+                <radialGradient id="sky" cx="50%" cy="38%" r="62%">
+                    <stop offset="0%" stop-color="#f97316"/>
+                    <stop offset="35%" stop-color="#ec4899"/>
+                    <stop offset="68%" stop-color="#6b21a8"/>
+                    <stop offset="100%" stop-color="#090d1a"/>
+                </radialGradient>
+                <linearGradient id="neonRing" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#4ade80"/>
+                    <stop offset="50%" stop-color="#22c55e"/>
+                    <stop offset="100%" stop-color="#86efac"/>
+                </linearGradient>
+                <linearGradient id="vGreen" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stop-color="#4ade80"/>
+                    <stop offset="100%" stop-color="#15803d"/>
+                </linearGradient>
+                <linearGradient id="bannerGreen" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#dcfce7"/>
+                    <stop offset="50%" stop-color="#86efac"/>
+                    <stop offset="100%" stop-color="#4ade80"/>
+                </linearGradient>
+            </defs>
+            <!-- Nền tròn & Viền Neon Xanh Lá -->
+            <circle cx="250" cy="250" r="240" fill="url(#sky)" stroke="url(#neonRing)" stroke-width="12"/>
+            <circle cx="250" cy="250" r="232" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.6"/>
+            <!-- Thành phố Los Santos & Hoàng hôn -->
+            <g fill="#1e1b4b" opacity="0.65">
+                <rect x="65" y="130" width="28" height="140"/>
+                <rect x="98" y="105" width="34" height="165"/>
+                <rect x="140" y="90" width="40" height="180"/>
+                <rect x="315" y="115" width="36" height="155"/>
+                <rect x="358" y="135" width="30" height="135"/>
+            </g>
+            <!-- Trực thăng góc phải trên -->
+            <g transform="translate(335, 68) rotate(-8)" fill="#1e1b4b">
+                <ellipse cx="28" cy="14" rx="22" ry="9"/>
+                <rect x="45" y="11" width="26" height="4"/>
+                <rect x="6" y="4" width="46" height="2.5"/>
+            </g>
+            <!-- Bộ 3 Nhân vật GTA V (Trevor - Michael - Franklin) -->
+            <g>
+                <!-- Trevor (Trái) -->
+                <path d="M48 300 Q95 215 158 235 L175 335 L48 335 Z" fill="#e2e8f0" stroke="#0f172a" stroke-width="5"/>
+                <circle cx="115" cy="175" r="40" fill="#d97757" stroke="#0f172a" stroke-width="5"/>
+                <!-- Franklin (Phải) -->
+                <path d="M332 235 Q395 215 452 300 L452 335 L325 335 Z" fill="#cbd5e1" stroke="#0f172a" stroke-width="5"/>
+                <circle cx="385" cy="175" r="40" fill="#8d5524" stroke="#0f172a" stroke-width="5"/>
+                <!-- Michael (Giữa) -->
+                <path d="M145 295 Q250 195 355 295 L365 340 L135 340 Z" fill="#1e293b" stroke="#090d1a" stroke-width="6"/>
+                <circle cx="250" cy="132" r="48" fill="#e09f7d" stroke="#090d1a" stroke-width="5"/>
+                <path d="M204 122 Q250 82 296 122 Q285 95 250 95 Q215 95 204 122 Z" fill="#1e293b"/>
+            </g>
+            <!-- Chữ GRAND THEFT AUTO V -->
+            <text x="235" y="232" text-anchor="middle" fill="#ffffff" stroke="#000000" stroke-width="12" paint-order="stroke" font-family="Impact, Arial Black, sans-serif" font-size="60" font-weight="900" letter-spacing="1">grand theft</text>
+            <text x="195" y="295" text-anchor="middle" fill="#ffffff" stroke="#000000" stroke-width="12" paint-order="stroke" font-family="Impact, Arial Black, sans-serif" font-size="66" font-weight="900" letter-spacing="1">auto</text>
+            <!-- Biểu tượng số V xanh lá + Dải băng FIVE -->
+            <g transform="translate(270, 232)">
+                <polygon points="0,0 44,96 88,0 64,0 44,52 24,0" fill="url(#vGreen)" stroke="#ffffff" stroke-width="5"/>
+                <rect x="-4" y="34" width="96" height="22" rx="6" fill="#ffffff" stroke="#000000" stroke-width="3.5"/>
+                <text x="44" y="50" text-anchor="middle" fill="#000000" font-family="Impact, Arial Black, sans-serif" font-size="17" font-weight="900" letter-spacing="1.5">FIVE</text>
+            </g>
+            <!-- Chữ GTA V & Dải iOS & Android + 2 nút Táo / Android -->
+            <text x="230" y="345" text-anchor="middle" fill="#f8fafc" stroke="#000000" stroke-width="8" paint-order="stroke" font-family="Arial Black, sans-serif" font-size="34" font-weight="900" font-style="italic">GTA V</text>
+            <rect x="140" y="356" width="220" height="40" rx="8" fill="url(#bannerGreen)" stroke="#16a34a" stroke-width="3"/>
+            <text x="250" y="383" text-anchor="middle" fill="#052e16" font-family="Arial Black, sans-serif" font-size="23" font-weight="900" font-style="italic">iOS &amp; Android</text>
+            <!-- Icon iOS bên trái -->
+            <g transform="translate(92, 332) rotate(-8)">
+                <rect x="0" y="0" width="46" height="68" rx="10" fill="#050811" stroke="#4ade80" stroke-width="3.5"/>
+                <circle cx="23" cy="36" r="11" fill="#ffffff"/>
+                <ellipse cx="25" cy="21" rx="3" ry="5" fill="#ffffff" transform="rotate(25 25 21)"/>
+            </g>
+            <!-- Icon Android bên phải -->
+            <g transform="translate(362, 326) rotate(8)">
+                <rect x="0" y="0" width="46" height="68" rx="10" fill="#050811" stroke="#4ade80" stroke-width="3.5"/>
+                <rect x="12" y="28" width="22" height="18" rx="3" fill="#84cc16"/>
+                <path d="M12 26 A11 11 0 0 1 34 26 Z" fill="#84cc16"/>
+            </g>
+            <!-- Siêu xe đèn hậu đỏ & Logo R* vàng ở đáy -->
+            <path d="M155 445 Q175 402 250 402 Q325 402 345 445 L355 475 L145 475 Z" fill="#0f172a" stroke="#334155" stroke-width="3"/>
+            <rect x="165" y="432" width="38" height="9" rx="4" fill="#ef4444"/>
+            <rect x="297" y="432" width="38" height="9" rx="4" fill="#ef4444"/>
+            <rect x="224" y="430" width="52" height="50" rx="10" fill="#facc15" stroke="#000000" stroke-width="3.5"/>
+            <text x="248" y="465" text-anchor="middle" fill="#000000" font-family="Impact, Arial Black, sans-serif" font-size="30" font-weight="900" font-style="italic">R★</text>
+        </svg>`);
+
+        window.CAI_DAT_WEB = {
+            // 👇 1. LINK LOGO MÀN HÌNH LOAD (Dán link ảnh của bạn vào giữa "" hoặc để trống dùng Logo GTA 5 mặc định):
+            logoManHinhLoad: "", // <--- THAY LINK LOGO MÀN HÌNH LOAD Ở ĐÂY
+
+            // 👇 2. LINK LOGO TRÒN TO ĐẦU TRANG (Dán link ảnh của bạn vào giữa "" hoặc để trống dùng Logo GTA 5 mặc định):
+            logoDauTrang: "",    // <--- THAY LINK LOGO ĐẦU TRANG Ở ĐÂY
+
+            // 👇 3. TIÊU ĐỀ TRANG WEB & LINK 3 NÚT MẠNG XÃ HỘI (TELEGRAM, TIKTOK, DISCORD):
+            tenHienThi: "VT MODGTAV",                  // <--- TIÊU ĐỀ CHÍNH CHỮ NEON (VT MODGTAV)
+            dongChao: "Hi, Welcome to",                // <--- Dòng chữ nhỏ trên tiêu đề
+            ngheNghiep: "Mod GTA 5 iOS & Android VIP", // <--- Dòng chữ chạy màu dưới tiêu đề
+            linkTelegram: "https://t.me/rxcheataov",   // <--- THAY LINK TELEGRAM Ở ĐÂY
+            linkTikTok: "https://tiktok.com/nightaov", // <--- THAY LINK TIKTOK Ở ĐÂY
+            linkDiscord: "https://discord.gg/VqndhZeFg",// <--- THAY LINK DISCORD Ở ĐÂY
+
+            // 👇 4. NHẠC NỀN & THÔNG BÁO CHẠY CHỮ:
+            linkNhacNen: "https://raw.githubusercontent.com/Rxaovvip/web/refs/heads/main/cc.mp3",
+            thongBaoLive: "❄️ Cập nhật Mod GTA 5: Ô Tô, Xe Máy & Nhân Vật (Android/iOS/PC) mới nhất - Cài Đặt Nhanh & An Toàn 100%!",
+
+            /* =====================================================================
+               👇 5. DANH MỤC MOD GTA5 (CHỈ HIỆN CHỮ: Ô TÔ | XE MÁY | NHÂN VẬT)
+               - Đổi tên banner: Sửa nội dung trong dòng `title: "..."`
+               - Thêm ảnh vào banner: Dán link ảnh vào dòng `banner: "..."`
+               - Thay Link Tải & Get Key: Dán link vào `linkTai` & `linkGetKey`
+               ===================================================================== */
+            categories: {
+
+                // ==================== MỤC 1: Ô TÔ ====================
+                "Ô Tô": {
+                    items: [
+                        {
+                            id: "oto_1",
+                            title: "MOD SIÊU XE LAMBORGHINI AVENTADOR GTA 5", // <--- CHỈNH TÊN BANNER Ở ĐÂY
+                            date: "09/11/2026",
+                            badge: "🚗 Ô TÔ",
+                            banner: "",                        // <--- THÊM LINK ẢNH BANNER VÀO ĐÂY
+                            linkTai: "https://google.com",     // <--- THAY LINK TẢI Ở ĐÂY
+                            linkGetKey: "https://google.com"   // <--- THAY LINK GET KEY Ở ĐÂY
+                        },
+                        {
+                            id: "oto_2",
+                            title: "PACK SIÊU XE BUGATTI CHIRON & FERRARI ĐỘ BODYKIT", // <--- CHỈNH TÊN BANNER Ở ĐÂY
+                            date: "09/11/2026",
+                            badge: "🏎️ Ô TÔ VIP",
+                            banner: "",                        // <--- THÊM LINK ẢNH BANNER VÀO ĐÂY
+                            linkTai: "https://google.com",     // <--- THAY LINK TẢI Ở ĐÂY
+                            linkGetKey: "https://google.com"   // <--- THAY LINK GET KEY Ở ĐÂY
+                        }
+                    ]
+                },
+
+                // ==================== MỤC 2: XE MÁY ====================
+                "Xe Máy": {
+                    items: [
+                        {
+                            id: "xemay_1",
+                            title: "MOD MÔ TÔ KAWASAKI NINJA H2R & BMW S1000RR", // <--- CHỈNH TÊN BANNER Ở ĐÂY
+                            date: "09/11/2026",
+                            badge: "🏍️ XE MÁY",
+                            banner: "",                        // <--- THÊM LINK ẢNH BANNER VÀO ĐÂY
+                            linkTai: "https://google.com",     // <--- THAY LINK TẢI Ở ĐÂY
+                            linkGetKey: "https://google.com"   // <--- THAY LINK GET KEY Ở ĐÂY
+                        },
+                        {
+                            id: "xemay_2",
+                            title: "PACK XE ĐỘ EXCITER 155, VARIO & SH VIỆT NAM", // <--- CHỈNH TÊN BANNER Ở ĐÂY
+                            date: "09/11/2026",
+                            badge: "🔥 XE ĐỘ",
+                            banner: "",                        // <--- THÊM LINK ẢNH BANNER VÀO ĐÂY
+                            linkTai: "https://google.com",     // <--- THAY LINK TẢI Ở ĐÂY
+                            linkGetKey: "https://google.com"   // <--- THAY LINK GET KEY Ở ĐÂY
+                        }
+                    ]
+                },
+
+                // ==================== MỤC 3: NHÂN VẬT ====================
+                "Nhân Vật": {
+                    items: [
+                        {
+                            id: "nhanvat_1",
+                            title: "MOD SKIN NHÂN VẬT SIÊU ANH HÙNG & ĐỒ HIỆU GTA 5", // <--- CHỈNH TÊN BANNER Ở ĐÂY
+                            date: "09/11/2026",
+                            badge: "👤 NHÂN VẬT",
+                            banner: "",                        // <--- THÊM LINK ẢNH BANNER VÀO ĐÂY
+                            linkTai: "https://google.com",     // <--- THAY LINK TẢI Ở ĐÂY
+                            linkGetKey: "https://google.com"   // <--- THAY LINK GET KEY Ở ĐÂY
+                        }
+                    ]
+                }
+            }
+        };
+    </script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        :root[data-theme="dark"] {
+            --bg-main: #060916;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --glass-bg: rgba(16, 24, 48, 0.62);
+            --glass-card: rgba(12, 19, 38, 0.76);
+            --glass-border: rgba(255, 255, 255, 0.18);
+            --glass-shadow: 0 14px 34px rgba(0, 0, 0, 0.55), inset 0 1px 1.5px rgba(255, 255, 255, 0.25);
+            --btn-key-bg: rgba(15, 23, 42, 0.8);
+            --input-bg: rgba(15, 23, 42, 0.72);
+            --snow-color: #e0f2fe;
+            --snow-glow: rgba(56, 189, 248, 0.9);
+        }
+
+        :root[data-theme="light"] {
+            --bg-main: #eaf2ff;
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --glass-bg: rgba(255, 255, 255, 0.72);
+            --glass-card: rgba(255, 255, 255, 0.84);
+            --glass-border: rgba(255, 255, 255, 0.94);
+            --glass-shadow: 0 12px 28px rgba(30, 41, 59, 0.1), inset 0 1.5px 2px rgba(255, 255, 255, 0.95);
+            --btn-key-bg: rgba(241, 245, 249, 0.92);
+            --input-bg: rgba(255, 255, 255, 0.9);
+            --snow-color: #0284c7;
+            --snow-glow: rgba(14, 165, 233, 0.6);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            background-color: var(--bg-main);
+            color: var(--text-primary);
+            min-height: 100vh;
+            overflow-x: hidden;
+            transition: background-color 0.35s ease, color 0.35s ease;
+            position: relative;
+            user-select: none;
+        }
+
+        @keyframes spin360 {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        @keyframes spinReverse {
+            0% { transform: rotate(360deg); }
+            100% { transform: rotate(0deg); }
+        }
+
+        /* =========================================================
+           HIỆU ỨNG CỰC QUANG & TUYẾT RƠI (SNOWFALL) TOÀN TRANG
+        ========================================================== */
+        .aurora-bg {
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            z-index: 0;
+            overflow: hidden;
+        }
+        .aurora-blob {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.42;
+            animation: floatBlob 14s infinite alternate ease-in-out;
+        }
+        .blob-1 { width: 290px; height: 290px; background: #22c55e; top: -60px; left: -70px; }
+        .blob-2 { width: 320px; height: 320px; background: #38bdf8; top: 30%; right: -90px; animation-delay: -4s; }
+        .blob-3 { width: 280px; height: 280px; background: #a855f7; bottom: -50px; left: 15%; animation-delay: -8s; }
+
+        @keyframes floatBlob {
+            0% { transform: translate(0, 0) scale(1); }
+            100% { transform: translate(30px, 35px) scale(1.12); }
+        }
+
+        #snowCanvas {
+            position: fixed;
+            inset: 0;
+            width: 100vw;
+            height: 100vh;
+            pointer-events: none !important;
+            z-index: 2147483646;
+        }
+
+        #snow-crystal-layer {
+            position: fixed;
+            inset: 0;
+            width: 100vw;
+            height: 100vh;
+            pointer-events: none !important;
+            z-index: 45;
+            overflow: hidden;
+        }
+        .snow-crystal {
+            position: absolute;
+            top: -40px;
+            color: var(--snow-color);
+            text-shadow: 0 0 8px var(--snow-glow);
+            pointer-events: none !important;
+            will-change: transform;
+            animation: crystalFall linear infinite;
+        }
+        @keyframes crystalFall {
+            0% { transform: translate3d(0, -5vh, 0) rotate(0deg); }
+            50% { transform: translate3d(var(--sway, 22px), 50vh, 0) rotate(180deg); }
+            100% { transform: translate3d(calc(var(--sway, 22px) * -0.6), 108vh, 0) rotate(360deg); }
+        }
+
+        /* =========================================================
+           CHUẨN iOS LIQUID GLASS
+        ========================================================== */
+        .liquid-glass {
+            background: var(--glass-bg);
+            backdrop-filter: blur(24px) saturate(190%);
+            -webkit-backdrop-filter: blur(24px) saturate(190%);
+            border: 1px solid var(--glass-border);
+            box-shadow: var(--glass-shadow);
+        }
+
+        .liquid-card {
+            background: var(--glass-card);
+            backdrop-filter: blur(26px) saturate(190%);
+            -webkit-backdrop-filter: blur(26px) saturate(190%);
+            border: 1px solid var(--glass-border);
+            box-shadow: var(--glass-shadow);
+            border-radius: 26px;
+            padding: 15px;
+            position: relative;
+        }
+
+        .app-wrap {
+            position: relative;
+            z-index: 10;
+            width: 100%;
+            max-width: 440px;
+            margin: 0 auto;
+            padding: 14px 14px 110px;
+        }
+
+        /* Thanh trên cùng */
+        .top-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 6px;
+            margin-bottom: 16px;
+        }
+        .pill-btn {
+            padding: 8px 11px;
+            border-radius: 999px;
+            font-size: 12px;
+            font-weight: 800;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            cursor: pointer;
+            color: var(--text-primary);
+            transition: transform 0.18s ease;
+            white-space: nowrap;
+        }
+        .pill-btn:active { transform: scale(0.94); }
+        .pill-btn-edit {
+            background: linear-gradient(135deg, rgba(34, 197, 94, 0.25), rgba(56, 189, 248, 0.25));
+            border: 1.5px solid rgba(34, 197, 94, 0.65);
+        }
+        .live-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #22c55e;
+            box-shadow: 0 0 8px #22c55e;
+            flex-shrink: 0;
+        }
+
+        /* Khung Avatar Tròn To + Hào Quang GTA 5 */
+        .profile-box {
+            text-align: center;
+            margin-bottom: 16px;
+        }
+        .avatar-stage {
+            position: relative;
+            width: 148px;
+            height: 148px;
+            margin: 0 auto 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+        .fire-aura-outer {
+            position: absolute;
+            inset: -8px;
+            border-radius: 50%;
+            background: conic-gradient(from 0deg, #22c55e, #4ade80, #38bdf8, #a855f7, #ec4899, #22c55e);
+            filter: blur(13px);
+            opacity: 0.9;
+            animation: spin360 3s linear infinite;
+        }
+        .fire-aura-inner {
+            position: absolute;
+            inset: -3px;
+            border-radius: 50%;
+            background: conic-gradient(from 180deg, #22c55e, #38bdf8, #a855f7, #4ade80, #22c55e);
+            animation: spinReverse 2.2s linear infinite;
+        }
+        .hood-ring {
+            position: relative;
+            z-index: 3;
+            width: 134px;
+            height: 134px;
+            border-radius: 50%;
+            padding: 4px;
+            background: linear-gradient(180deg, #22c55e 0%, #16a34a 55%, #052e16 100%);
+            box-shadow: 0 8px 24px rgba(34, 197, 94, 0.45), inset 0 2px 3px rgba(255,255,255,0.45);
+        }
+        .avatar-circle {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 2.5px solid #4ade80;
+            background: #090d1a;
+            position: relative;
+        }
+        .avatar-circle img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .avatar-circle::after {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -65%;
+            width: 48%;
+            height: 200%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.45), transparent);
+            transform: rotate(25deg);
+            animation: shineSweep 3.5s infinite;
+        }
+        @keyframes shineSweep {
+            0% { left: -65%; }
+            35%, 100% { left: 145%; }
+        }
+
+        .verified-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 4px 14px;
+            border-radius: 999px;
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 0.8px;
+            text-transform: uppercase;
+            color: #059669;
+            margin-bottom: 5px;
+            box-shadow: 0 0 14px rgba(34, 197, 94, 0.28);
+        }
+        :root[data-theme="dark"] .verified-pill {
+            color: #4ade80;
+            text-shadow: 0 0 8px rgba(74, 222, 128, 0.7);
+        }
+        .hi-text {
+            font-size: 13.5px;
+            font-weight: 700;
+            color: var(--text-secondary);
+        }
+        .name-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            margin: 4px 0 6px;
+        }
+        .name-title {
+            font-size: 29px;
+            font-weight: 900;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #ffffff;
+            -webkit-text-stroke: 0.7px #059669;
+            text-shadow:
+                0 1px 3px rgba(0, 0, 0, 0.85),
+                0 0 4px #ffffff,
+                0 0 10px #00f5d4,
+                0 0 20px #00bbf9,
+                0 0 35px #22c55e,
+                0 0 55px #a855f7;
+            animation: neonPulse 2.6s ease-in-out infinite alternate;
+        }
+        :root[data-theme="light"] .name-title {
+            color: #ffffff;
+            -webkit-text-stroke: 1px #065f46;
+            filter: drop-shadow(0 3px 8px rgba(6, 78, 59, 0.45));
+        }
+        @keyframes neonPulse {
+            0% {
+                text-shadow:
+                    0 1px 3px rgba(0, 0, 0, 0.85),
+                    0 0 4px #ffffff,
+                    0 0 10px #00f5d4,
+                    0 0 20px #00bbf9,
+                    0 0 35px #22c55e,
+                    0 0 55px #a855f7;
+                transform: scale(1);
+            }
+            100% {
+                text-shadow:
+                    0 1px 3px rgba(0, 0, 0, 0.9),
+                    0 0 6px #ffffff,
+                    0 0 14px #4ade80,
+                    0 0 28px #38bdf8,
+                    0 0 45px #c084fc,
+                    0 0 70px #ec4899;
+                transform: scale(1.02);
+            }
+        }
+        .job-text {
+            font-size: 14px;
+            font-weight: 800;
+            background: linear-gradient(90deg, #10b981, #0ea5e9, #a855f7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            filter: drop-shadow(0 0 10px rgba(56, 189, 248, 0.35));
+            margin-bottom: 14px;
+        }
+        :root[data-theme="dark"] .job-text {
+            background: linear-gradient(90deg, #4ade80, #38bdf8, #e879f9);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            filter: drop-shadow(0 0 12px rgba(74, 222, 128, 0.45));
+        }
+
+        /* Hàng nút Mạng Xã Hội */
+        .icon-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 13px;
+            flex-wrap: wrap;
+        }
+        .sq-btn {
+            width: 62px;
+            height: 62px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            cursor: pointer;
+            text-decoration: none;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .sq-btn:active { transform: scale(0.92); }
+
+        /* Hàng nút Danh Mục Chữ (Ô Tô, Xe Máy, Nhân Vật, Tất Cả) - XOÁ LOGO MỤC */
+        .cat-text-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 9px;
+            flex-wrap: wrap;
+            padding-bottom: 8px;
+        }
+        .cat-text-btn {
+            position: relative;
+            padding: 11px 16px;
+            border-radius: 16px;
+            font-size: 13.5px;
+            font-weight: 800;
+            color: var(--text-primary);
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 7px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+        }
+        .cat-text-btn:active {
+            transform: scale(0.93);
+        }
+        .cat-text-btn.active-cat {
+            transform: translateY(-3px);
+            background: linear-gradient(135deg, rgba(34, 197, 94, 0.32), rgba(56, 189, 248, 0.32), rgba(168, 85, 247, 0.28));
+            border: 1.5px solid rgba(34, 197, 94, 0.85);
+            box-shadow: 0 10px 22px rgba(34, 197, 94, 0.28), 0 0 14px rgba(56, 189, 248, 0.25);
+        }
+        .cat-dot {
+            position: absolute;
+            bottom: -7px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 22px;
+            height: 4px;
+            border-radius: 999px;
+            background: linear-gradient(90deg, #22c55e, #38bdf8);
+            box-shadow: 0 0 8px #22c55e;
+        }
+        .cat-count {
+            min-width: 20px;
+            height: 20px;
+            padding: 0 6px;
+            border-radius: 999px;
+            font-size: 11px;
+            font-weight: 800;
+            color: #fff;
+            background: linear-gradient(135deg, #16a34a, #0284c7);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Thanh LIVE chạy chữ */
+        .marquee-bar {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 9px 13px;
+            border-radius: 18px;
+            margin-bottom: 18px;
+            overflow: hidden;
+        }
+        .live-pill {
+            background: linear-gradient(135deg, #16a34a, #0284c7);
+            color: #fff;
+            font-size: 10.5px;
+            font-weight: 900;
+            padding: 4px 10px;
+            border-radius: 999px;
+            flex-shrink: 0;
+        }
+        .marquee-wrap { overflow: hidden; white-space: nowrap; flex: 1; }
+        .marquee-content {
+            display: inline-block;
+            font-size: 12.5px;
+            font-weight: 700;
+            padding-left: 100%;
+            animation: marqueeMove 16s linear infinite;
+        }
+        @keyframes marqueeMove {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-100%); }
+        }
+
+        /* Ô Tìm Kiếm */
+        .search-input {
+            width: 100%;
+            padding: 11px 15px;
+            border-radius: 16px;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-primary);
+            outline: none;
+            margin: 12px 0 16px;
+        }
+        .search-input::placeholder { color: var(--text-secondary); }
+
+        /* Danh sách Thẻ Mod */
+        .cards-stack {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        .banner-box {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            border-radius: 18px;
+            overflow: hidden;
+            background: #080f20;
+            margin-bottom: 12px;
+            border: 1px solid rgba(255,255,255,0.18);
+        }
+        .banner-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .badge-corner {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgba(9, 13, 26, 0.84);
+            backdrop-filter: blur(8px);
+            color: #fff;
+            padding: 4px 11px;
+            border-radius: 999px;
+            font-size: 11px;
+            font-weight: 800;
+            border: 1px solid rgba(255,255,255,0.22);
+        }
+        .quick-edit-badge {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: rgba(22, 163, 74, 0.9);
+            backdrop-filter: blur(8px);
+            color: #fff;
+            padding: 4px 10px;
+            border-radius: 999px;
+            font-size: 11px;
+            font-weight: 800;
+            border: 1px solid rgba(255,255,255,0.4);
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.35);
+            transition: transform 0.15s ease;
+        }
+        .quick-edit-badge:active { transform: scale(0.92); }
+        .meta-row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 7px;
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+        }
+        .pill-working {
+            background: rgba(16, 185, 129, 0.16);
+            color: #10b981;
+            padding: 2px 9px;
+            border-radius: 999px;
+            font-size: 11px;
+            font-weight: 800;
+        }
+        .script-title {
+            font-size: 16.5px;
+            font-weight: 900;
+            text-align: center;
+            margin-bottom: 13px;
+            line-height: 1.35;
+            text-transform: uppercase;
+        }
+        .btn-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+        .action-btn {
+            padding: 12px 10px;
+            border-radius: 15px;
+            font-size: 13.5px;
+            font-weight: 800;
+            text-align: center;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            cursor: pointer;
+            transition: transform 0.18s ease;
+        }
+        .action-btn:active { transform: scale(0.95); }
+        .btn-dl {
+            background: linear-gradient(90deg, #16a34a 0%, #0284c7 52%, #7c3aed 100%);
+            color: #fff;
+            border: 1px solid rgba(255,255,255,0.35);
+            box-shadow: 0 6px 18px rgba(22, 163, 74, 0.35);
+        }
+        .btn-key {
+            background: var(--btn-key-bg);
+            color: var(--text-primary);
+            border: 1px solid var(--glass-border);
+        }
+
+        /* Đĩa nhạc góc trái dưới */
+        .music-btn {
+            position: fixed;
+            bottom: 16px;
+            left: 16px;
+            z-index: 60;
+            padding: 8px 14px;
+            border-radius: 999px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 12px;
+            font-weight: 800;
+            cursor: pointer;
+            color: var(--text-primary);
+        }
+        .music-disc {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #22c55e, #38bdf8, #a855f7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            color: #fff;
+        }
+
+        /* Nút nổi mở bảng Thêm Ảnh & Sửa Tên Banner góc phải dưới */
+        .fab-customizer {
+            position: fixed;
+            bottom: 16px;
+            right: 16px;
+            z-index: 60;
+            padding: 9px 15px;
+            border-radius: 999px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 12px;
+            font-weight: 800;
+            cursor: pointer;
+            color: #ffffff;
+            background: linear-gradient(135deg, #16a34a, #0284c7);
+            border: 1.5px solid rgba(255,255,255,0.6);
+            box-shadow: 0 8px 22px rgba(22, 163, 74, 0.45);
+            transition: transform 0.18s ease;
+        }
+        .fab-customizer:active { transform: scale(0.93); }
+
+        /* =========================================================
+           MODAL TUỲ CHỈNH ẢNH BANNER & TÊN TRỰC TIẾP + LẤY CODE
+        ========================================================== */
+        .modal-backdrop {
+            position: fixed;
+            inset: 0;
+            z-index: 9990;
+            background: rgba(5, 8, 17, 0.72);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 14px;
+        }
+        .modal-backdrop.open {
+            display: flex;
+        }
+        .modal-panel {
+            width: 100%;
+            max-width: 430px;
+            max-height: 88vh;
+            overflow-y: auto;
+            border-radius: 26px;
+            padding: 18px 16px;
+            color: var(--text-primary);
+        }
+        .field-label {
+            display: block;
+            font-size: 11.5px;
+            font-weight: 800;
+            color: var(--text-secondary);
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 0.4px;
+        }
+        .field-input {
+            width: 100%;
+            padding: 10px 12px;
+            border-radius: 13px;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-primary);
+            background: var(--input-bg);
+            border: 1px solid var(--glass-border);
+            outline: none;
+            margin-bottom: 11px;
+        }
+        .field-input:focus {
+            border-color: #22c55e;
+        }
+        .upload-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            padding: 9px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 800;
+            background: rgba(34, 197, 94, 0.18);
+            color: #16a34a;
+            border: 1px dashed rgba(34, 197, 94, 0.6);
+            cursor: pointer;
+            width: 100%;
+            margin-bottom: 11px;
+            transition: transform 0.15s ease;
+        }
+        :root[data-theme="dark"] .upload-btn {
+            color: #4ade80;
+        }
+        .upload-btn:active { transform: scale(0.96); }
+    </style>
+</head>
+<body>
+
+    <!-- =========================================================================
+         1. MÀN HÌNH LOAD 3.5 GIÂY (GẮN LOGO GTA 5 + TIÊU ĐỀ MOD GTA5)
+         ========================================================================= -->
+    <div id="loader-overlay" style="position: fixed; top: 0; left: 0; right: 0; bottom: 0; width: 100vw; height: 100vh; background: radial-gradient(circle at center, #0d2818 0%, #050711 100%); z-index: 2147483647; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 24px; opacity: 1; visibility: visible; transition: opacity 0.55s ease, visibility 0.55s ease;">
+        <div style="position: relative; width: 138px; height: 138px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+            <!-- Vòng hào quang xanh lá GTA xoay -->
+            <div style="position: absolute; inset: -8px; border-radius: 50%; background: conic-gradient(from 0deg, #22c55e, #4ade80, #00e5ff, #a855f7, #22c55e); filter: blur(8px); animation: spin360 1.8s linear infinite;"></div>
+            <!-- Vòng nét đứt xoay ngược -->
+            <div style="position: absolute; inset: 0px; border-radius: 50%; border: 2.5px dashed #4ade80; animation: spinReverse 3.2s linear infinite; z-index: 2;"></div>
+            <!-- Ảnh Logo Màn Hình Load -->
+            <img id="loader-img"
+                 src=""
+                 alt="MOD GTA5 Loader Logo"
+                 style="position: relative; z-index: 3; width: 118px; height: 118px; border-radius: 50%; object-fit: cover; border: 3px solid #4ade80; background: #090d1a; box-shadow: 0 0 28px rgba(34, 197, 94, 0.6);">
+        </div>
+
+        <div style="padding: 4px 14px; border-radius: 999px; background: rgba(34, 197, 94, 0.15); border: 1px solid rgba(74, 222, 128, 0.45); color: #4ade80; font-size: 11px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 8px;">
+            ❄️ GTA V SYSTEM INITIALIZING
+        </div>
+
+        <div id="loader-title" class="name-title" style="font-size: 25px; margin-bottom: 6px;">
+            VT MODGTAV
+        </div>
+
+        <div id="loader-status" style="color: #94a3b8; font-size: 12.5px; font-weight: 700; margin-bottom: 16px; text-align: center;">
+            Đang tải dữ liệu Mod GTA 5...
+        </div>
+
+        <!-- Thanh Tiến Trình Liquid Glass -->
+        <div style="width: 250px; height: 11px; background: rgba(255, 255, 255, 0.12); border-radius: 999px; padding: 2px; border: 1px solid rgba(255, 255, 255, 0.22); overflow: hidden; box-shadow: inset 0 1px 3px rgba(0,0,0,0.6);">
+            <div id="loader-bar" style="height: 100%; width: 0%; border-radius: 999px; background: linear-gradient(90deg, #22c55e, #38bdf8, #a855f7); box-shadow: 0 0 12px rgba(34, 197, 94, 0.8); transition: width 0.04s linear;"></div>
+        </div>
+
+        <div style="width: 250px; display: flex; justify-content: space-between; align-items: center; margin-top: 8px; padding: 0 4px;">
+            <span style="color: #64748b; font-size: 11px; font-weight: 800; text-transform: uppercase;">GTA V iOS & Android</span>
+            <span id="loader-pct" style="color: #4ade80; font-size: 13px; font-weight: 900;">0%</span>
+        </div>
+    </div>
+
+    <!-- =========================================================================
+         2. LỚP HIỆU ỨNG CỰC QUANG & TUYẾT RƠI (SNOWFALL) TOÀN TRANG
+         ========================================================================= -->
+    <div class="aurora-bg">
+        <div class="aurora-blob blob-1"></div>
+        <div class="aurora-blob blob-2"></div>
+        <div class="aurora-blob blob-3"></div>
+    </div>
+    <canvas id="snowCanvas"></canvas>
+    <div id="snow-crystal-layer"></div>
+
+    <!-- =========================================================================
+         3. GIAO DIỆN CHÍNH
+         ========================================================================= -->
+    <main class="app-wrap">
+
+        <!-- Thanh Trên Cùng: Đồng Hồ + Sửa Web + Load + Sáng/Tối -->
+        <div class="top-bar">
+            <div class="pill-btn liquid-glass" onclick="replayLoadingScreen()" title="Bấm để xem lại màn hình Load">
+                <span class="live-dot"></span>
+                <span id="clock-text">Morning! 00:00:00 ☀️</span>
+            </div>
+
+            <div style="display: flex; align-items: center; gap: 5px;">
+                <button type="button" class="pill-btn liquid-glass pill-btn-edit" onclick="openEditorModal()" title="Thêm ảnh & chỉnh tên Banner trực tiếp">
+                    <span>✏️</span>
+                    <span>Sửa Web</span>
+                </button>
+                <button type="button" class="pill-btn liquid-glass" onclick="replayLoadingScreen()" title="Xem lại màn hình Load">
+                    <span>🔄</span>
+                </button>
+                <button type="button" class="pill-btn liquid-glass" onclick="toggleTheme()" title="Đổi giao diện Sáng/Tối">
+                    <span id="theme-icon">☀️</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Hồ Sơ Cá Nhân & Logo GTA 5 Tròn To Đầu Trang -->
+        <section class="profile-box">
+            <div class="avatar-stage" onclick="openEditorModal()" title="Chạm để đổi Logo GTA 5">
+                <div class="fire-aura-outer"></div>
+                <div class="fire-aura-inner"></div>
+                <div class="hood-ring">
+                    <div class="avatar-circle">
+                        <img id="main-avatar"
+                             src=""
+                             alt="MOD GTA5 Avatar">
+                    </div>
+                </div>
+            </div>
+
+            <div class="verified-pill liquid-glass">
+                <span style="width: 6px; height: 6px; border-radius: 50%; background: #22c55e; box-shadow: 0 0 8px #22c55e; display: inline-block;"></span>
+                <span>Grand Theft Auto V</span>
+            </div>
+
+            <div id="profile-hi" class="hi-text">Hi, Welcome to</div>
+
+            <div class="name-row">
+                <h1 id="profile-name" class="name-title">VT MODGTAV</h1>
+                <svg style="width: 24px; height: 24px; color: #00f5d4; filter: drop-shadow(0 0 8px #00f5d4) drop-shadow(0 0 16px #22c55e);" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm-1.9 14.7L6 12.6l1.5-1.5 2.6 2.6 6.4-6.4 1.5 1.5-7.9 7.9z"/>
+                </svg>
+            </div>
+
+            <div id="profile-job" class="job-text">Mod GTA 5 iOS & Android VIP</div>
+
+            <!-- 3 Nút Mạng Xã Hội: Telegram - TikTok - Discord -->
+            <div class="icon-row">
+                <a id="btn-telegram" href="https://t.me/" target="_blank" rel="noopener noreferrer" class="sq-btn liquid-glass" title="Telegram">
+                    <div style="width: 42px; height: 42px; border-radius: 50%; background: #24A1DE; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 14px rgba(36,161,222,0.55);">
+                        <svg style="width: 22px; height: 22px; color: #fff;" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                        </svg>
+                    </div>
+                </a>
+
+                <a id="btn-tiktok" href="https://tiktok.com/" target="_blank" rel="noopener noreferrer" class="sq-btn liquid-glass" title="TikTok">
+                    <div style="width: 42px; height: 42px; border-radius: 50%; background: #090d16; border: 1px solid rgba(255,255,255,0.2); display: flex; align-items: center; justify-content: center; box-shadow: 0 0 14px rgba(254,44,85,0.45);">
+                        <svg style="width: 22px; height: 22px;" viewBox="0 0 24 24" fill="none">
+                            <path d="M16.6 5.82s.51.5 0 0A4.278 4.278 0 0 1 15.54 3h-3.09v12.4a2.592 2.592 0 0 1-2.59 2.5c-1.42 0-2.6-1.16-2.6-2.6 0-1.72 1.66-3.01 3.37-2.48V9.66c-3.45-.46-6.47 2.22-6.47 5.64 0 3.33 2.76 5.7 5.69 5.7 3.14 0 5.69-2.55 5.69-5.7V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3s-1.88.09-3.24-1.48z" fill="#ffffff" style="filter: drop-shadow(-1.5px -1px 0px #25F4EE) drop-shadow(1.5px 1.5px 0px #FE2C55);"/>
+                        </svg>
+                    </div>
+                </a>
+
+                <a id="btn-discord" href="https://discord.gg/" target="_blank" rel="noopener noreferrer" class="sq-btn liquid-glass" title="Discord">
+                    <div style="width: 42px; height: 42px; border-radius: 50%; background: #5865F2; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 14px rgba(88,101,242,0.55);">
+                        <svg style="width: 22px; height: 22px; color: #fff;" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Thanh Thông Báo LIVE -->
+        <div class="marquee-bar liquid-glass">
+            <span class="live-pill">⚡ LIVE</span>
+            <div class="marquee-wrap">
+                <span id="marquee-content" class="marquee-content"></span>
+            </div>
+        </div>
+
+        <!-- Danh Mục MOD GTA5 (Nút Chữ: Ô Tô | Xe Máy | Nhân Vật | Tất Cả - Đã xoá Logo mục) -->
+        <div style="text-align: center; margin-bottom: 8px;">
+            <div style="font-size: 15.5px; font-weight: 900; letter-spacing: 0.6px; text-transform: uppercase;">
+                • DANH MỤC MOD GTA5 •
+            </div>
+            <div style="width: 72px; height: 3.5px; border-radius: 99px; background: linear-gradient(90deg, #22c55e, #38bdf8, #a855f7); margin: 5px auto 14px;"></div>
+
+            <!-- Hàng nút chữ không logo -->
+            <div id="category-row" class="cat-text-row"></div>
+
+            <input id="search-input"
+                   type="text"
+                   class="search-input liquid-glass"
+                   placeholder="🔍 Tìm nhanh bản Mod Ô Tô, Xe Máy, Nhân Vật GTA 5..."
+                   oninput="renderCards()">
+        </div>
+
+        <!-- Danh Sách Bảng Mod -->
+        <div id="cards-container" class="cards-stack"></div>
+
+    </main>
+
+    <!-- Nút Nhạc Nền Góc Trái Dưới -->
+    <div class="music-btn liquid-glass" onclick="toggleMusicManual(event)">
+        <div id="music-disc" class="music-disc">🎵</div>
+        <span id="music-label">Nhạc: Chạm bật</span>
+    </div>
+    <audio id="bg-audio" loop preload="auto" playsinline></audio>
+
+    <!-- Nút Nổi Góc Phải Dưới: Thêm Ảnh & Đổi Tên Banner + Copy Code -->
+    <button type="button" class="fab-customizer" onclick="openEditorModal()">
+        <span>🖼️</span>
+        <span>Thêm Ảnh & Lấy Code</span>
+    </button>
+
+    <!-- =========================================================================
+         4. BẢNG TUỲ CHỈNH TRỰC TIẾP: THÊM ẢNH BANNER, ĐỔI TÊN & COPY CODE HTML
+         ========================================================================= -->
+    <div id="editor-modal" class="modal-backdrop" onclick="if(event.target===this) closeEditorModal()">
+        <div class="modal-panel liquid-card">
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px;">
+                <div style="font-size: 15px; font-weight: 900; text-transform: uppercase;">
+                    🛠️ Chỉnh Ảnh & Tên Banner
+                </div>
+                <button type="button" onclick="closeEditorModal()" style="width: 30px; height: 30px; border-radius: 50%; border: 1px solid var(--glass-border); background: var(--input-bg); color: var(--text-primary); font-weight: 900; cursor: pointer;">
+                    ✕
+                </button>
+            </div>
+
+            <!-- Khối 1: Đổi Logo Màn Hình Load & Đầu Trang -->
+            <div style="padding: 12px; border-radius: 18px; background: rgba(34, 197, 94, 0.08); border: 1px solid rgba(34, 197, 94, 0.28); margin-bottom: 14px;">
+                <div style="font-size: 12.5px; font-weight: 900; color: #16a34a; margin-bottom: 8px; text-transform: uppercase;">
+                    1. Logo Load & Đầu Trang + Tiêu Đề
+                </div>
+                <label class="field-label">Tiêu đề chính:</label>
+                <input id="edit-web-title" type="text" class="field-input" placeholder="VT MODGTAV" oninput="saveGeneralBranding()">
+
+                <label class="field-label">Link Ảnh Logo (Load & Đầu trang):</label>
+                <input id="edit-logo-url" type="text" class="field-input" placeholder="Dán link ảnh hoặc chọn ảnh từ máy bên dưới..." oninput="saveGeneralBranding()">
+
+                <label class="upload-btn">
+                    <span>📁 Chọn Ảnh Logo Từ Máy Điện Thoại</span>
+                    <input type="file" accept="image/*" style="display: none;" onchange="handleFileUpload(event, 'logo')">
+                </label>
+            </div>
+
+            <!-- Khối 2: Chỉnh từng thẻ Banner (Ô Tô / Xe Máy / Nhân Vật) -->
+            <div style="padding: 12px; border-radius: 18px; background: rgba(56, 189, 248, 0.08); border: 1px solid rgba(56, 189, 248, 0.28); margin-bottom: 14px;">
+                <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
+                    <span style="font-size: 12.5px; font-weight: 900; color: #0284c7; text-transform: uppercase;">
+                        2. Chỉnh Thẻ Banner Mod
+                    </span>
+                    <button type="button" onclick="addNewModItem()" style="padding: 4px 10px; border-radius: 999px; font-size: 11px; font-weight: 800; background: #16a34a; color: #fff; border: none; cursor: pointer;">
+                        + Thêm Bản Mod
+                    </button>
+                </div>
+
+                <label class="field-label">Chọn Mục (Ô Tô / Xe Máy / Nhân Vật):</label>
+                <select id="edit-cat-select" class="field-input" onchange="onSelectEditCategory()"></select>
+
+                <label class="field-label">Chọn Bản Mod Cần Sửa:</label>
+                <select id="edit-item-select" class="field-input" onchange="loadSelectedModToForm()"></select>
+
+                <label class="field-label">✏️ Tên Banner (Hiển thị chữ to trên thẻ):</label>
+                <input id="edit-item-title" type="text" class="field-input" placeholder="Nhập tên bản Mod..." oninput="saveCurrentModFromForm()">
+
+                <label class="field-label">🖼️ Link Ảnh Banner (16:9):</label>
+                <input id="edit-item-banner" type="text" class="field-input" placeholder="Dán link ảnh banner hoặc tải ảnh từ máy..." oninput="saveCurrentModFromForm()">
+
+                <label class="upload-btn">
+                    <span>📸 Chọn Ảnh Banner Từ Máy Điện Thoại</span>
+                    <input type="file" accept="image/*" style="display: none;" onchange="handleFileUpload(event, 'banner')">
+                </label>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+                    <div>
+                        <label class="field-label">Nhãn Góc:</label>
+                        <input id="edit-item-badge" type="text" class="field-input" placeholder="🚗 Ô TÔ" oninput="saveCurrentModFromForm()">
+                    </div>
+                    <div>
+                        <label class="field-label">Ngày Up:</label>
+                        <input id="edit-item-date" type="text" class="field-input" placeholder="09/11/2026" oninput="saveCurrentModFromForm()">
+                    </div>
+                </div>
+
+                <label class="field-label">📥 Link Tải:</label>
+                <input id="edit-item-dl" type="text" class="field-input" placeholder="https://..." oninput="saveCurrentModFromForm()">
+
+                <label class="field-label">🔑 Link Get Key:</label>
+                <input id="edit-item-key" type="text" class="field-input" placeholder="https://..." oninput="saveCurrentModFromForm()">
+
+                <button type="button" onclick="deleteCurrentModItem()" style="width: 100%; padding: 8px; border-radius: 11px; font-size: 11.5px; font-weight: 800; background: rgba(239, 68, 68, 0.15); color: #ef4444; border: 1px solid rgba(239, 68, 68, 0.35); cursor: pointer;">
+                    🗑️ Xoá Bản Mod Này
+                </button>
+            </div>
+
+            <!-- Nút Xem Trước & Sao Chép Code -->
+            <div style="display: flex; flex-direction: column; gap: 8px;">
+                <button type="button" onclick="copyUpdatedHtmlCode()" class="action-btn btn-dl" style="width: 100%; padding: 13px;">
+                    <span>📋</span>
+                    <span>Sao Chép Toàn Bộ Code HTML Đã Sửa</span>
+                </button>
+                <button type="button" onclick="closeEditorModal()" class="action-btn btn-key" style="width: 100%; padding: 11px;">
+                    <span>👁️</span>
+                    <span>Đóng & Xem Trước Trên Web</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Thông Báo -->
+    <div id="toast-msg" class="liquid-glass" style="position: fixed; top: 18px; left: 50%; transform: translateX(-50%); z-index: 2147483647; padding: 10px 18px; border-radius: 999px; font-size: 12.5px; font-weight: 800; opacity: 0; pointer-events: none; transition: opacity 0.3s ease; text-align: center; white-space: nowrap;">
+        🚀 Đang mở liên kết...
+    </div>
+
+    <script>
+        /* =========================================================================
+           1. ĐỒNG BỘ LOGO GTA 5 & MÀN HÌNH LOAD 3.5 GIÂY
+           ========================================================================= */
+        let loaderTimer = null;
+
+        function showToast(message) {
+            const toast = document.getElementById("toast-msg");
+            if (!toast) return;
+            toast.textContent = message;
+            toast.style.opacity = "1";
+            clearTimeout(window._toastTimeout);
+            window._toastTimeout = setTimeout(() => {
+                toast.style.opacity = "0";
+            }, 2200);
+        }
+
+        function applyCustomBranding() {
+            const cfg = window.CAI_DAT_WEB || {};
+            const loaderImg = document.getElementById("loader-img");
+            const mainAvatar = document.getElementById("main-avatar");
+
+            const loadLogoSrc = (cfg.logoManHinhLoad && cfg.logoManHinhLoad.trim() !== "")
+                ? cfg.logoManHinhLoad.trim()
+                : window.LOGO_GTA5_MAC_DINH;
+
+            const headerLogoSrc = (cfg.logoDauTrang && cfg.logoDauTrang.trim() !== "")
+                ? cfg.logoDauTrang.trim()
+                : window.LOGO_GTA5_MAC_DINH;
+
+            if (loaderImg) {
+                loaderImg.onerror = function() {
+                    this.onerror = null;
+                    this.src = window.LOGO_GTA5_MAC_DINH;
+                };
+                loaderImg.src = loadLogoSrc;
+            }
+
+            if (mainAvatar) {
+                mainAvatar.onerror = function() {
+                    this.onerror = null;
+                    this.src = window.LOGO_GTA5_MAC_DINH;
+                };
+                mainAvatar.src = headerLogoSrc;
+            }
+
+            if (cfg.tenHienThi) {
+                document.getElementById("profile-name").textContent = cfg.tenHienThi;
+                document.getElementById("loader-title").textContent = cfg.tenHienThi;
+                document.title = cfg.tenHienThi + " - Mod Ô Tô, Xe Máy, Nhân Vật VIP";
+            }
+            if (cfg.dongChao) document.getElementById("profile-hi").textContent = cfg.dongChao;
+            if (cfg.ngheNghiep) document.getElementById("profile-job").textContent = cfg.ngheNghiep;
+            if (cfg.linkTelegram) document.getElementById("btn-telegram").href = cfg.linkTelegram;
+            if (cfg.linkTikTok) document.getElementById("btn-tiktok").href = cfg.linkTikTok;
+            if (cfg.linkDiscord) document.getElementById("btn-discord").href = cfg.linkDiscord;
+            if (cfg.thongBaoLive) document.getElementById("marquee-content").textContent = cfg.thongBaoLive;
+        }
+
+        function startLoadingSequence() {
+            const overlay = document.getElementById("loader-overlay");
+            const bar = document.getElementById("loader-bar");
+            const pctTxt = document.getElementById("loader-pct");
+            const statusTxt = document.getElementById("loader-status");
+            if (!overlay) return;
+
+            if (loaderTimer) clearInterval(loaderTimer);
+
+            overlay.style.display = "flex";
+            overlay.style.opacity = "1";
+            overlay.style.visibility = "visible";
+            overlay.style.pointerEvents = "auto";
+            if (bar) bar.style.width = "0%";
+            if (pctTxt) pctTxt.textContent = "0%";
+            if (statusTxt) statusTxt.textContent = "Đang tải gói Mod Ô Tô, Xe Máy, Nhân Vật...";
+
+            let pct = 0;
+            setTimeout(() => {
+                loaderTimer = setInterval(() => {
+                    pct += 1;
+                    if (pct > 100) pct = 100;
+                    if (bar) bar.style.width = pct + "%";
+                    if (pctTxt) pctTxt.textContent = pct + "%";
+
+                    if (pct === 45 && statusTxt) {
+                        statusTxt.textContent = "Đang kích hoạt giao diện MOD GTA5...";
+                    } else if (pct === 85 && statusTxt) {
+                        statusTxt.textContent = "Hoàn tất! Đang mở MOD GTA5 VIP...";
+                    }
+
+                    if (pct >= 100) {
+                        clearInterval(loaderTimer);
+                        setTimeout(() => {
+                            overlay.style.opacity = "0";
+                            overlay.style.visibility = "hidden";
+                            overlay.style.pointerEvents = "none";
+                        }, 250);
+                    }
+                }, 32);
+            }, 150);
+        }
+
+        function replayLoadingScreen() {
+            applyCustomBranding();
+            startLoadingSequence();
+        }
+
+        /* =========================================================================
+           2. HIỆU ỨNG TUYẾT RƠI (SNOWFALL CANVAS + BÔNG TUYẾT ❄ ❅ ❆)
+           ========================================================================= */
+        (function initSnowfallEffect() {
+            const crystalLayer = document.getElementById("snow-crystal-layer");
+            if (crystalLayer) {
+                const chars = ["❄", "❅", "❆", "•"];
+                for (let i = 0; i < 28; i++) {
+                    const span = document.createElement("span");
+                    span.className = "snow-crystal";
+                    span.textContent = chars[i % chars.length];
+                    span.style.left = (Math.random() * 100) + "vw";
+                    span.style.fontSize = (10 + Math.random() * 12) + "px";
+                    span.style.opacity = (0.4 + Math.random() * 0.55).toFixed(2);
+                    span.style.setProperty("--sway", ((Math.random() > 0.5 ? 1 : -1) * (15 + Math.random() * 25)) + "px");
+                    span.style.animationDuration = (6 + Math.random() * 7) + "s";
+                    span.style.animationDelay = (-Math.random() * 12) + "s";
+                    crystalLayer.appendChild(span);
+                }
+            }
+
+            const canvas = document.getElementById("snowCanvas");
+            if (!canvas) return;
+            const ctx = canvas.getContext("2d");
+            let flakes = [];
+
+            function resize() {
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+            }
+            window.addEventListener("resize", resize);
+            resize();
+
+            for (let i = 0; i < 45; i++) {
+                flakes.push({
+                    x: Math.random() * canvas.width,
+                    y: Math.random() * canvas.height,
+                    r: Math.random() * 2.2 + 0.8,
+                    vx: (Math.random() - 0.5) * 0.6,
+                    vy: Math.random() * 1.1 + 0.5,
+                    alpha: Math.random() * 0.55 + 0.25
+                });
+            }
+
+            function drawSnow() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                for (let i = 0; i < flakes.length; i++) {
+                    const f = flakes[i];
+                    ctx.beginPath();
+                    ctx.arc(f.x, f.y, f.r, 0, Math.PI * 2);
+                    ctx.fillStyle = `rgba(224, 242, 254, ${f.alpha})`;
+                    ctx.fill();
+
+                    f.x += f.vx;
+                    f.y += f.vy;
+                    if (f.y > canvas.height + 5) {
+                        f.y = -5;
+                        f.x = Math.random() * canvas.width;
+                    }
+                    if (f.x > canvas.width + 5) f.x = -5;
+                    if (f.x < -5) f.x = canvas.width + 5;
+                }
+                requestAnimationFrame(drawSnow);
+            }
+            drawSnow();
+        })();
+
+        /* =========================================================================
+           3. DANH MỤC NÚT CHỮ (Ô TÔ, XE MÁY, NHÂN VẬT, TẤT CẢ) & THẺ MOD
+           ========================================================================= */
+        const ALL_CAT = "__ALL__";
+        let activeCategory = Object.keys((window.CAI_DAT_WEB && window.CAI_DAT_WEB.categories) || {})[0] || ALL_CAT;
+
+        function renderCategories() {
+            const row = document.getElementById("category-row");
+            if (!row) return;
+            row.innerHTML = "";
+
+            const cats = (window.CAI_DAT_WEB && window.CAI_DAT_WEB.categories) || {};
+            const keys = Object.keys(cats);
+            let totalCount = 0;
+            keys.forEach(k => { totalCount += ((cats[k] && cats[k].items) || []).length; });
+
+            [...keys, ALL_CAT].forEach(key => {
+                const isAll = (key === ALL_CAT);
+                const catObj = isAll ? {} : cats[key];
+                const count = isAll ? totalCount : ((catObj.items || []).length);
+                const isActive = (activeCategory === key);
+                const labelText = isAll ? "Tất Cả" : key;
+
+                const btn = document.createElement("button");
+                btn.type = "button";
+                btn.className = "cat-text-btn liquid-glass" + (isActive ? " active-cat" : "");
+                btn.onclick = () => {
+                    activeCategory = key;
+                    renderCategories();
+                    renderCards();
+                };
+                btn.innerHTML = `
+                    <span>${labelText}</span>
+                    <span class="cat-count">${count}</span>
+                    ${isActive ? '<span class="cat-dot"></span>' : ''}
+                `;
+                row.appendChild(btn);
+            });
+        }
+
+        function renderCards() {
+            const container = document.getElementById("cards-container");
+            if (!container) return;
+            container.innerHTML = "";
+
+            const cats = (window.CAI_DAT_WEB && window.CAI_DAT_WEB.categories) || {};
+            const keyword = (document.getElementById("search-input")?.value || "").trim().toLowerCase();
+            let list = [];
+
+            if (activeCategory === ALL_CAT) {
+                Object.keys(cats).forEach(catName => {
+                    (cats[catName].items || []).forEach((it, idx) => list.push({ ...it, _catName: catName, _idx: idx }));
+                });
+            } else if (cats[activeCategory]) {
+                list = (cats[activeCategory].items || []).map((it, idx) => ({ ...it, _catName: activeCategory, _idx: idx }));
+            }
+
+            if (keyword) {
+                list = list.filter(it =>
+                    (it.title || "").toLowerCase().includes(keyword) ||
+                    (it._catName || "").toLowerCase().includes(keyword)
+                );
+            }
+
+            list.forEach((item, idx) => {
+                const itemId = item.id || ("item_" + idx);
+                const dlUrl = item.linkTai || item.downloadLink || "#";
+                const keyUrl = item.linkGetKey || item.keyLink || "#";
+
+                const bannerHtml = (item.banner && item.banner.trim() !== "")
+                    ? `<img src="${item.banner.trim()}" alt="${item.title}" onerror="this.style.display='none'">`
+                    : `<div style="width: 100%; height: 100%; background: radial-gradient(circle at 30% 30%, #14532d 0%, #0f172a 60%, #1e1b4b 100%); display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 18px; text-align: center;">
+                           <div style="padding: 3px 12px; border-radius: 999px; background: rgba(74,222,128,0.16); border: 1px solid rgba(74,222,128,0.45); color: #4ade80; font-size: 11px; font-weight: 800; margin-bottom: 6px; text-transform: uppercase;">
+                               GTA V • ${item._catName || "MOD VIP"}
+                           </div>
+                           <div style="color: #ffffff; font-weight: 900; font-size: 18px; letter-spacing: 0.6px; text-transform: uppercase; text-shadow: 0 2px 12px rgba(0,0,0,0.6); line-height: 1.3;">
+                               ${item.title}
+                           </div>
+                           <div style="color: #94a3b8; font-size: 11px; font-weight: 700; margin-top: 6px;">
+                               (Bấm "✏️ Sửa Ảnh/Tên" góc trái để thêm ảnh Banner)
+                           </div>
+                       </div>`;
+
+                const badgeHtml = (item.badge && item.badge.trim() !== "")
+                    ? `<div class="badge-corner">${item.badge}</div>`
+                    : "";
+
+                const card = document.createElement("div");
+                card.className = "liquid-card";
+                card.innerHTML = `
+                    <div class="banner-box">
+                        ${bannerHtml}
+                        ${badgeHtml}
+                        <button type="button" class="quick-edit-badge" onclick="openEditorForCard('${item._catName}', ${item._idx})">
+                            <span>✏️</span>
+                            <span>Sửa Ảnh/Tên</span>
+                        </button>
+                    </div>
+                    <div class="meta-row">
+                        <span>📅 Ngày up: <strong>${item.date}</strong></span>
+                        <span class="pill-working">Working</span>
+                    </div>
+                    <div class="script-title">${item.title}</div>
+                    <div class="btn-grid">
+                        <a href="${dlUrl}" target="_blank" rel="noopener noreferrer"
+                           class="action-btn btn-dl"
+                           onclick="handleScriptClick('${itemId}', 'Link Tải')">
+                            <span>Link Tải</span>
+                            <span>📥</span>
+                        </a>
+                        <a href="${keyUrl}" target="_blank" rel="noopener noreferrer"
+                           class="action-btn btn-key"
+                           onclick="handleScriptClick('${itemId}', 'Get Key')">
+                            <span>🔑</span>
+                            <span>Get Key</span>
+                        </a>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        function handleScriptClick(itemId, label) {
+            showToast("🚀 Đang mở " + label + "...");
+        }
+
+        /* =========================================================================
+           4. CÔNG CỤ THÊM ẢNH BANNER, SỬA TÊN TRỰC TIẾP & SAO CHÉP CODE HTML
+           ========================================================================= */
+        function openEditorModal() {
+            const modal = document.getElementById("editor-modal");
+            if (!modal) return;
+            modal.classList.add("open");
+
+            const cfg = window.CAI_DAT_WEB || {};
+            document.getElementById("edit-web-title").value = cfg.tenHienThi || "VT MODGTAV";
+            document.getElementById("edit-logo-url").value = cfg.logoDauTrang || "";
+
+            populateCategorySelect();
+        }
+
+        function openEditorForCard(catName, itemIdx) {
+            openEditorModal();
+            const catSelect = document.getElementById("edit-cat-select");
+            if (catSelect && catName) {
+                catSelect.value = catName;
+                populateItemSelect(catName, itemIdx);
+            }
+        }
+
+        function closeEditorModal() {
+            const modal = document.getElementById("editor-modal");
+            if (modal) modal.classList.remove("open");
+        }
+
+        function populateCategorySelect() {
+            const catSelect = document.getElementById("edit-cat-select");
+            if (!catSelect) return;
+            const cats = Object.keys((window.CAI_DAT_WEB && window.CAI_DAT_WEB.categories) || {});
+            catSelect.innerHTML = "";
+            cats.forEach(c => {
+                const opt = document.createElement("option");
+                opt.value = c;
+                opt.textContent = "Mục: " + c;
+                catSelect.appendChild(opt);
+            });
+            const defaultCat = (activeCategory !== ALL_CAT && cats.includes(activeCategory)) ? activeCategory : cats[0];
+            if (defaultCat) {
+                catSelect.value = defaultCat;
+                populateItemSelect(defaultCat, 0);
+            }
+        }
+
+        function onSelectEditCategory() {
+            const catName = document.getElementById("edit-cat-select").value;
+            populateItemSelect(catName, 0);
+        }
+
+        function populateItemSelect(catName, selectedIdx) {
+            const itemSelect = document.getElementById("edit-item-select");
+            if (!itemSelect) return;
+            const items = (window.CAI_DAT_WEB.categories[catName] && window.CAI_DAT_WEB.categories[catName].items) || [];
+            itemSelect.innerHTML = "";
+            items.forEach((it, idx) => {
+                const opt = document.createElement("option");
+                opt.value = idx;
+                opt.textContent = `Bản #${idx + 1}: ${it.title.substring(0, 32)}`;
+                itemSelect.appendChild(opt);
+            });
+            if (items.length > 0) {
+                itemSelect.value = Math.min(selectedIdx || 0, items.length - 1);
+            }
+            loadSelectedModToForm();
+        }
+
+        function loadSelectedModToForm() {
+            const catName = document.getElementById("edit-cat-select").value;
+            const idx = parseInt(document.getElementById("edit-item-select").value || "0", 10);
+            const items = (window.CAI_DAT_WEB.categories[catName] && window.CAI_DAT_WEB.categories[catName].items) || [];
+            const item = items[idx];
+
+            if (!item) {
+                document.getElementById("edit-item-title").value = "";
+                document.getElementById("edit-item-banner").value = "";
+                document.getElementById("edit-item-badge").value = "";
+                document.getElementById("edit-item-date").value = "";
+                document.getElementById("edit-item-dl").value = "";
+                document.getElementById("edit-item-key").value = "";
+                return;
+            }
+
+            document.getElementById("edit-item-title").value = item.title || "";
+            document.getElementById("edit-item-banner").value = item.banner || "";
+            document.getElementById("edit-item-badge").value = item.badge || "";
+            document.getElementById("edit-item-date").value = item.date || "";
+            document.getElementById("edit-item-dl").value = item.linkTai || "";
+            document.getElementById("edit-item-key").value = item.linkGetKey || "";
+        }
+
+        function saveGeneralBranding() {
+            const titleVal = document.getElementById("edit-web-title").value.trim();
+            const logoVal = document.getElementById("edit-logo-url").value.trim();
+
+            window.CAI_DAT_WEB.tenHienThi = titleVal || "VT MODGTAV";
+            window.CAI_DAT_WEB.logoManHinhLoad = logoVal;
+            window.CAI_DAT_WEB.logoDauTrang = logoVal;
+            applyCustomBranding();
+        }
+
+        function saveCurrentModFromForm() {
+            const catName = document.getElementById("edit-cat-select").value;
+            const idx = parseInt(document.getElementById("edit-item-select").value || "0", 10);
+            const items = (window.CAI_DAT_WEB.categories[catName] && window.CAI_DAT_WEB.categories[catName].items) || [];
+            if (!items[idx]) return;
+
+            items[idx].title = document.getElementById("edit-item-title").value;
+            items[idx].banner = document.getElementById("edit-item-banner").value.trim();
+            items[idx].badge = document.getElementById("edit-item-badge").value;
+            items[idx].date = document.getElementById("edit-item-date").value;
+            items[idx].linkTai = document.getElementById("edit-item-dl").value.trim();
+            items[idx].linkGetKey = document.getElementById("edit-item-key").value.trim();
+
+            // Cập nhật lại tên trong dropdown & vẽ lại thẻ ngay lập tức
+            const selOpt = document.getElementById("edit-item-select").options[idx];
+            if (selOpt) {
+                selOpt.textContent = `Bản #${idx + 1}: ${(items[idx].title || "Mod mới").substring(0, 32)}`;
+            }
+            renderCards();
+        }
+
+        function addNewModItem() {
+            const catName = document.getElementById("edit-cat-select").value;
+            if (!window.CAI_DAT_WEB.categories[catName]) return;
+            const items = window.CAI_DAT_WEB.categories[catName].items;
+
+            const newItem = {
+                id: "mod_" + Date.now(),
+                title: "BẢN MOD " + catName.toUpperCase() + " GTA 5 MỚI",
+                date: "09/11/2026",
+                badge: "🔥 " + catName.toUpperCase(),
+                banner: "",
+                linkTai: "https://google.com",
+                linkGetKey: "https://google.com"
+            };
+            items.push(newItem);
+            populateItemSelect(catName, items.length - 1);
+            renderCategories();
+            renderCards();
+            showToast("✅ Đã thêm bản Mod mới vào mục " + catName);
+        }
+
+        function deleteCurrentModItem() {
+            const catName = document.getElementById("edit-cat-select").value;
+            const idx = parseInt(document.getElementById("edit-item-select").value || "0", 10);
+            const items = (window.CAI_DAT_WEB.categories[catName] && window.CAI_DAT_WEB.categories[catName].items) || [];
+            if (items.length <= 1) {
+                showToast("⚠️ Giữ lại ít nhất 1 bản Mod trong mục này!");
+                return;
+            }
+            items.splice(idx, 1);
+            populateItemSelect(catName, Math.max(0, idx - 1));
+            renderCategories();
+            renderCards();
+            showToast("🗑️ Đã xoá bản Mod!");
+        }
+
+        // Hỗ trợ chọn ảnh trực tiếp từ thư viện điện thoại (Tự động nén nhẹ để gắn vào web mượt mà)
+        function handleFileUpload(event, targetType) {
+            const file = event.target.files && event.target.files[0];
+            if (!file) return;
+
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const img = new Image();
+                img.onload = function() {
+                    const canvas = document.createElement("canvas");
+                    const maxW = (targetType === "logo") ? 360 : 800;
+                    let w = img.width;
+                    let h = img.height;
+                    if (w > maxW) {
+                        h = Math.round((h * maxW) / w);
+                        w = maxW;
+                    }
+                    canvas.width = w;
+                    canvas.height = h;
+                    const ctx = canvas.getContext("2d");
+                    ctx.drawImage(img, 0, 0, w, h);
+                    const dataUrl = canvas.toDataURL("image/jpeg", 0.82);
+
+                    if (targetType === "logo") {
+                        document.getElementById("edit-logo-url").value = dataUrl;
+                        saveGeneralBranding();
+                        showToast("✅ Đã cập nhật ảnh Logo mới!");
+                    } else {
+                        document.getElementById("edit-item-banner").value = dataUrl;
+                        saveCurrentModFromForm();
+                        showToast("✅ Đã thêm ảnh vào Banner!");
+                    }
+                };
+                img.src = e.target.result;
+            };
+            reader.readAsDataURL(file);
+        }
+
+        // Xuất & Copy toàn bộ code HTML đã bao gồm ảnh và tên banner mới của bạn
+        function copyUpdatedHtmlCode() {
+            const cloneDoc = document.documentElement.cloneNode(true);
+            // Đóng modal và ẩn màn load trong bản clone nếu cần sạch sẽ
+            const cloneModal = cloneDoc.querySelector("#editor-modal");
+            if (cloneModal) cloneModal.classList.remove("open");
+
+            // Ghi đè cấu hình window.CAI_DAT_WEB mới nhất vào thẻ <script> đầu tiên
+            const scripts = cloneDoc.querySelectorAll("head script");
+            scripts.forEach(sc => {
+                if (sc.textContent && sc.textContent.includes("window.CAI_DAT_WEB")) {
+                    const jsonConfig = JSON.stringify(window.CAI_DAT_WEB, null, 4);
+                    sc.textContent = `\n        window.LOGO_GTA5_MAC_DINH = ${JSON.stringify(window.LOGO_GTA5_MAC_DINH)};\n        window.CAI_DAT_WEB = ${jsonConfig};\n    `;
+                }
+            });
+
+            const finalHtml = "<!DOCTYPE html>\n" + cloneDoc.outerHTML;
+            const tempArea = document.createElement("textarea");
+            tempArea.value = finalHtml;
+            tempArea.style.position = "fixed";
+            tempArea.style.left = "-9999px";
+            document.body.appendChild(tempArea);
+            tempArea.select();
+            try {
+                document.execCommand("copy");
+                showToast("✅ Đã sao chép toàn bộ Code HTML mới!");
+            } catch (err) {
+                showToast("⚠️ Không thể copy tự động, hãy thử lại!");
+            }
+            document.body.removeChild(tempArea);
+        }
+
+        /* =========================================================================
+           5. ĐỒNG HỒ GIỜ VIỆT NAM, SÁNG/TỐI & NHẠC NỀN TỰ PHÁT KHI CHẠM
+           ========================================================================= */
+        function updateClock() {
+            const now = new Date();
+            const vn = new Date(now.toLocaleString("en-US", { timeZone: "Asia/Ho_Chi_Minh" }));
+            const h = vn.getHours();
+            const m = String(vn.getMinutes()).padStart(2, "0");
+            const s = String(vn.getSeconds()).padStart(2, "0");
+            const hh = String(h).padStart(2, "0");
+
+            let label = "Night!";
+            let icon = "🌙";
+            if (h >= 5 && h < 11) { label = "Morning!"; icon = "☀️"; }
+            else if (h >= 11 && h < 14) { label = "Noon!"; icon = "🌤️"; }
+            else if (h >= 14 && h < 18) { label = "Afternoon!"; icon = "⛅"; }
+
+            const el = document.getElementById("clock-text");
+            if (el) el.textContent = `${label} ${hh}:${m}:${s} ${icon}`;
+        }
+        setInterval(updateClock, 1000);
+        updateClock();
+
+        function toggleTheme() {
+            const root = document.documentElement;
+            const isDark = root.getAttribute("data-theme") === "dark";
+            root.setAttribute("data-theme", isDark ? "light" : "dark");
+            document.getElementById("theme-icon").textContent = isDark ? "☀️" : "🌙";
+        }
+
+        const audioEl = document.getElementById("bg-audio");
+        if (audioEl && window.CAI_DAT_WEB && window.CAI_DAT_WEB.linkNhacNen) {
+            audioEl.src = window.CAI_DAT_WEB.linkNhacNen;
+        }
+        let musicStarted = false;
+
+        function unlockAudio() {
+            if (musicStarted || !audioEl) return;
+            audioEl.volume = 1.0;
+            audioEl.play().then(() => {
+                musicStarted = true;
+                document.getElementById("music-disc").style.animation = "spin360 3s linear infinite";
+                document.getElementById("music-label").textContent = "Nhạc: Đang phát";
+            }).catch(() => {});
+        }
+        ["touchstart", "touchend", "click"].forEach(evt => {
+            document.addEventListener(evt, unlockAudio, { passive: true });
+        });
+
+        function toggleMusicManual(e) {
+            if (e) e.stopPropagation();
+            if (!audioEl) return;
+            if (audioEl.paused) {
+                audioEl.play();
+                musicStarted = true;
+                document.getElementById("music-disc").style.animation = "spin360 3s linear infinite";
+                document.getElementById("music-label").textContent = "Nhạc: Đang phát";
+            } else {
+                audioEl.pause();
+                document.getElementById("music-disc").style.animation = "none";
+                document.getElementById("music-label").textContent = "Nhạc: Đã tắt";
+            }
+        }
+
+        // Khởi chạy ngay lập tức
+        applyCustomBranding();
+        startLoadingSequence();
+        renderCategories();
+        renderCards();
+    </script>
+</body>
+</html>
